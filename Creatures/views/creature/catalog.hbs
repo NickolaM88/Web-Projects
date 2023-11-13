@@ -1,0 +1,16 @@
+<main>
+    <section id="catalog">
+        <h1>All posts</h1>
+        {{#if creature}}
+        <div class="band">
+            {{#each creature}}
+            {{>creature}}
+            {{/each}}
+        </div>
+        {{else}}
+        <div class="no-posts">
+            <p class="no-offer">There are no posts yet...</p>
+        </div>
+        {{/if}}
+    </section>
+</main>
